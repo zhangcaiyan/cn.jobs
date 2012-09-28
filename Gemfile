@@ -24,7 +24,7 @@ gem 'ruby_regex'
 gem 'active_hash'
 
 group :development, :test do
-  gem 'ruby-debug19', require: "ruby-debug"
+#  gem 'ruby-debug19', require: "ruby-debug"
 end
 
 
