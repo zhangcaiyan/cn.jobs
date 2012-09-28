@@ -8,6 +8,24 @@ gem 'rails', '3.2.8'
 gem 'mysql2'
 gem 'settingslogic'
 gem 'i18n_generators'
+gem 'jquery-rails'
+gem 'devise'
+gem 'will_paginate'
+gem 'meta_search'
+gem 'symbolize', require: 'symbolize/active_record'
+gem 'rmagick'
+gem 'paperclip'
+gem 'galetahub-simple_captcha', require: 'simple_captcha'
+gem 'simple_form', '~> 2.0.0rc'
+gem "default_value_for"
+gem 'delayed_job_active_record'
+gem 'whenever', require: false
+gem 'ruby_regex'
+gem 'active_hash'
+
+group :development, :test do
+  gem 'ruby-debug19', require: "ruby-debug"
+end
 
 
 # Gems used only for assets and not required
@@ -15,15 +33,14 @@ gem 'i18n_generators'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
+  gem 'uglifier', '>= 1.0.3'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
-  gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
-gem 'devise'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
