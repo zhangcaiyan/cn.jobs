@@ -1,12 +1,5 @@
 defaults: &defaults
   config:
-    #address: mail.crra010.com
-    #port: 25
-    #user_name: postmaster@crra010.com
-    #password: "58699057"
-    #authentication: :login
-    #enable_starttls_auto: false 
-
     address: smtp.163.com
     port: 25
     user_name: zhangcaiyanbeyond@163.com

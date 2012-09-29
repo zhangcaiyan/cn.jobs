@@ -10,6 +10,7 @@ gem 'settingslogic'
 gem 'i18n_generators'
 gem 'jquery-rails'
 gem 'devise'
+gem "devise-async"
 gem 'will_paginate'
 gem 'meta_search'
 gem 'symbolize', require: 'symbolize/active_record'
