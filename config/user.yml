@@ -1,0 +1,14 @@
+defaults: &defaults  
+  zhangcaiyan:
+    email: zhangcaiyanbeyond@gmail.com
+    password: zhangcaiyan
+    password_confirmation: zhangcaiyan
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

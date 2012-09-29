@@ -11,6 +11,11 @@
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+    <% if user_signed_in? %>
+      <%= link_to '首页', home_path %>
+      <%= link_to '退出', destroy_user_session_path, method: :delete %>
+      <%= link_to '修改密码', modify_password_user_registration_path %>
+    <% end %>
     <%= yield %>
 
   </body>

@@ -1,7 +1,16 @@
 CnJobs::Application.routes.draw do
+  get "admin/index"
+
   devise_for :users, path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register'}
 
-  get "home/index"
+  devise_scope :user do
+    get "modify_password_user_registration", to: "user/registrations#modify_password", path: "/users/modify_password"
+    put "update_password_user_registration", to: "user/registrations#update_password", path: "/users/update_password"
+  end
+
+  get "home" => "home#index"
+
+  get "admin" => "admin#index"
 
   root :to => "home#index"
   # The priority is based upon order of creation:
