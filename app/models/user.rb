@@ -9,4 +9,14 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me
   # attr_accessible :title, :body
   include Devise::Async::Model  
+
+  validates :email, presence: true, uniqueness: true, format: { with: RubyRegex::Email }
+  validates :password, presence: true, confirmation: true, if: :password_required?
+
+
+  protected
+
+  def password_required?
+    !persisted? || !password.nil? || !password_confirmation.nil?
+  end 
 end

@@ -12,4 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require app.js
+//= require jquery.validationEngine.js
+//= require jquery.validationEngine-zh_CN.js
