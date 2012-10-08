@@ -13,3 +13,6 @@ if !User.exists?(email: Setting::User.zhangcaiyan.email )
   User.confirm_by_token(user.confirmation_token)
   puts "填充zhangcaiyanbeyond账户数据"
 end
+
+# Added by Refinery CMS Pages extension
+Refinery::Pages::Engine.load_seed
