@@ -8,8 +8,8 @@ gem 'rails', '3.2.8'
 gem 'mysql2'
 gem 'settingslogic'
 gem 'i18n_generators'
-gem 'jquery-rails', '~> 2.0.0'
-gem 'devise', '= 2.0.4'
+gem 'jquery-rails'
+gem 'devise'
 gem "devise-async"
 gem 'will_paginate'
 gem 'meta_search'
@@ -23,7 +23,7 @@ gem 'delayed_job_active_record'
 gem 'whenever', require: false
 gem 'ruby_regex'
 gem 'active_hash'
-gem 'refinerycms', '~> 2.0.0'
+gem 'refinerycms', '~> 2.0.8'
 
 group :development, :test do
 #  gem 'ruby-debug19', require: "ruby-debug"
