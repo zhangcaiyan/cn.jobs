@@ -5,9 +5,7 @@ CnJobs::Application.routes.draw do
   # If you would like to change where this extension is mounted, simply change the :at option to something different.
   #
   # We ask that you don't use the :as option here, as Refinery relies on it being the default of "refinery"
-  mount Refinery::Core::Engine, :at => '/'
 
-  get "admin/index"
 
   devise_for :users, path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register'}
 
@@ -16,11 +14,14 @@ CnJobs::Application.routes.draw do
     put "update_password_user_registration", to: "user/registrations#update_password", path: "/users/update_password"
   end
 
+  mount Refinery::Core::Engine, :at => '/'
+
   get "home" => "home#index"
 
   get "admin" => "admin#index"
 
   root :to => "home#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
