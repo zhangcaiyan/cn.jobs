@@ -8,6 +8,11 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 #
+
+require File.expand_path('../seeds/region.rb', __FILE__)
+require File.expand_path("../seeds/industry.rb", __FILE__)
+
+
 if !User.exists?(email: Setting::User.zhangcaiyan.email )
   user=User.create(Setting::User.zhangcaiyan)
   User.confirm_by_token(user.confirmation_token)
@@ -16,3 +21,4 @@ end
 
 # Added by Refinery CMS Pages extension
 Refinery::Pages::Engine.load_seed
+

@@ -24,6 +24,7 @@ gem 'whenever', require: false
 gem 'ruby_regex'
 gem 'active_hash'
 gem 'refinerycms', '~> 2.0.8'
+gem 'ancestry'
 
 group :development, :test do
 #  gem 'ruby-debug19', require: "ruby-debug"
