@@ -9,8 +9,9 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 #
 
-require File.expand_path('../seeds/region.rb', __FILE__)
-require File.expand_path("../seeds/industry.rb", __FILE__)
+#require File.expand_path('../seeds/region.rb', __FILE__)
+#require File.expand_path("../seeds/industry.rb", __FILE__)
+require File.expand_path("../seeds/specialty.rb", __FILE__)
 
 
 if !User.exists?(email: Setting::User.zhangcaiyan.email )
